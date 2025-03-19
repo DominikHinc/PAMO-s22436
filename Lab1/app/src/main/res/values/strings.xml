@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMI-s22436</string>
+    <string name="first_fragment_label">Kalkulator BMI - s22436</string>
+    <string name="submit">Policz</string>
+    <string name="result">Twoje BMI to: </string>
+    <string name="height">Wzrost (w cm)</string>
+    <string name="weight">Waga (w kg)</string>
+    <string name="invalidInput">Proszę wprowadzić liczby naturalne pomiędzy 1-300</string>
+
+
+</resources>
