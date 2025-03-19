@@ -50,12 +50,24 @@ public class FirstFragment extends Fragment {
                 int heightValue = Integer.parseInt(height);
 
                 double bmi = calculateBMI(weightValue, heightValue);
-                String resultText = getString(R.string.result) + String.format(Locale.getDefault(), "%.2f", bmi);
+                String resultText = getString(R.string.result) + " " + String.format(Locale.getDefault(), "%.2f", bmi) + getString(R.string.itMeans) + " " + getResultInterpretation(bmi);
                 binding.textResult.setText(resultText);
 
                 hideKeyboard(view);
             }
         });
+    }
+
+    private String getResultInterpretation(double bmi){
+        if (bmi < 18.5) {
+            return getString(R.string.underweight);
+        } else if (bmi >= 18.5 && bmi < 25) {
+            return getString(R.string.optimum);
+        } else if (bmi >= 25 && bmi < 30) {
+            return getString(R.string.overweight);
+        } else {
+            return getString(R.string.obese);
+        }
     }
 
     private boolean isValidNumber(String value) {

@@ -6,6 +6,9 @@
     <string name="height">Wzrost (w cm)</string>
     <string name="weight">Waga (w kg)</string>
     <string name="invalidInput">Proszę wprowadzić liczby naturalne pomiędzy 1-300</string>
-
-
+    <string name="itMeans">\nOznacza to:</string>
+    <string name="underweight">Niedowage</string>
+    <string name="optimum">Wagę optymalną</string>
+    <string name="overweight">Nadwage</string>
+    <string name="obese">Otyłość</string>
 </resources>
