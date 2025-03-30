@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">s22436 - app</string>
+    
+    <string name="title_home">Harris</string>
+    <string name="title_dashboard">Recommender</string>
+    <string name="title_notifications">BMI</string>
+
+    <string name="first_fragment_label">Kalkulator BMI - s22436</string>
+    <string name="submit">Policz</string>
+    <string name="result">Twoje BMI to: </string>
+    <string name="height">Wzrost (w cm)</string>
+    <string name="weight">Waga (w kg)</string>
+    <string name="invalidInput">Proszę wprowadzić liczby naturalne pomiędzy 1-300</string>
+    <string name="itMeans">\nOznacza to:</string>
+    <string name="underweight">Niedowage</string>
+    <string name="optimum">Wagę optymalną</string>
+    <string name="overweight">Nadwage</string>
+    <string name="obese">Otyłość</string>
+
+    <string-array name="activity_levels">
+        <item>Brak aktywności</item>
+        <item>Lekka aktywność</item>
+        <item>Średnia aktywność</item>
+        <item>Duża aktywność</item>
+        <item>Bardzo duża aktywność</item>
+    </string-array>
+
+
+    <string name="hint_age">Wiek (lata)</string>
+    <string name="hint_weight">Waga (kg)</string>
+    <string name="hint_height">Wzrost (cm)</string>
+    <string name="gender_male">Mężczyzna</string>
+    <string name="gender_female">Kobieta</string>
+    <string name="calculate_button">Oblicz</string>
+    <string name="fieldsRequired">Proszę wypełnić wszystkie pola.</string>
+    <string name="harrisResult">Twoje dzienne zapotrzebowanie kaloryczne: </string>
+    <string name="harrisUnit">kcal</string>
+
+
+    <string name="hint_caloric_needs">Wprowadź swoje zapotrzebowanie kaloryczne</string>
+    <string name="button_calculate_recommendations">Pokaż rekomendacje</string>
+    <string name="low_calorie_diet">Rekomendacje dla diety niskokalorycznej:</string>
+    <string name="balanced_diet">Rekomendacje dla diety zrównoważonej:</string>
+    <string name="high_calorie_diet">Rekomendacje dla diety wysokokalorycznej:</string>
+    <string name="enter_caloric_needs">Proszę wprowadzić swoje zapotrzebowanie kaloryczne.</string>
+    <string name="low_calorie_recommendations">Rekomendacje dla diety niskokalorycznej:\n\n1. Sałatka z kurczakiem i warzywami (350 kcal)\nSkładniki: pierś z kurczaka, sałata, pomidor, ogórek, oliwa z oliwek.\n\n2. Zupa krem z brokułów (250 kcal)\nSkładniki: brokuły, cebula, czosnek, bulion warzywny.</string>
+    <string name="balanced_diet_recommendations">Rekomendacje dla diety zrównoważonej:\n\n1. Makaron pełnoziarnisty z kurczakiem i pesto (600 kcal)\nSkładniki: makaron pełnoziarnisty, pierś z kurczaka, pesto, parmezan.\n\n2. Omlet z warzywami (400 kcal)\nSkładniki: jajka, papryka, szpinak, ser feta.</string>
+    <string name="high_calorie_recommendations">Rekomendacje dla diety wysokokalorycznej:\n\n1. Stek wołowy z ziemniakami i warzywami (800 kcal)\nSkładniki: stek wołowy, ziemniaki, marchew, fasolka szparagowa.\n\n2. Smoothie proteinowe z bananem i masłem orzechowym (500 kcal)\nSkładniki: banan, mleko, masło orzechowe, białko w proszku.</string>
+</resources>
