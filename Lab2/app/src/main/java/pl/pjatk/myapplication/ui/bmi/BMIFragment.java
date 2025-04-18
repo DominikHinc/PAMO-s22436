@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import java.util.Locale;
 
+import pl.pjatk.myapplication.BMICalculator;
 import pl.pjatk.myapplication.R;
 import pl.pjatk.myapplication.databinding.FragmentBmiBinding;
 
@@ -40,7 +41,7 @@ public class BMIFragment extends Fragment {
                 weight = binding.inputWeight.getText().toString().trim();
                 height = binding.inputHeight.getText().toString().trim();
 
-                if (!isValidNumber(weight) || !isValidNumber(height)) {
+                if (!BMICalculator.isValidNumber(weight) || !BMICalculator.isValidNumber(height)) {
                     String resultText = getString(R.string.invalidInput);
                     binding.textResult.setText(resultText);
                     return;
@@ -49,7 +50,7 @@ public class BMIFragment extends Fragment {
                 int weightValue = Integer.parseInt(weight);
                 int heightValue = Integer.parseInt(height);
 
-                double bmi = calculateBMI(weightValue, heightValue);
+                double bmi = BMICalculator.calculateBMI(weightValue, heightValue);
                 String resultText = getString(R.string.result) + " " + String.format(Locale.getDefault(), "%.2f", bmi) + getString(R.string.itMeans) + " " + getResultInterpretation(bmi);
                 binding.textResult.setText(resultText);
 
@@ -68,20 +69,6 @@ public class BMIFragment extends Fragment {
         } else {
             return getString(R.string.obese);
         }
-    }
-
-    private boolean isValidNumber(String value) {
-        try {
-            int number = Integer.parseInt(value);
-            return number >= 1 && number <= 300;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
-    private double calculateBMI(int weight, int height) {
-        double heightInMeters = height / 100.0;
-        return weight / (heightInMeters * heightInMeters);
     }
 
     private void hideKeyboard(View view) {

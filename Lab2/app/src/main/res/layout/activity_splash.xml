@@ -1,7 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent" >
 
     <ImageView
         android:id="@+id/splash_image"
@@ -10,7 +9,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
         android:layout_above="@id/splash_text"
-        android:src="@raw/fit" />
+        android:src="@raw/fit"
+        android:contentDescription="@string/splash_image_description"
+        />
 
     <TextView
         android:id="@+id/splash_text"
