@@ -4,6 +4,7 @@
     <string name="title_home">Harris</string>
     <string name="title_dashboard">Recommender</string>
     <string name="title_notifications">BMI</string>
+    <string name="title_shopping">Lista zakupów</string>
 
     <string name="submit">Policz</string>
     <string name="result">Twoje BMI to: </string>
@@ -44,4 +45,10 @@
     <string name="high_calorie_recommendations">Rekomendacje dla diety wysokokalorycznej:\n\n1. Stek wołowy z ziemniakami i warzywami (800 kcal)\nSkładniki: stek wołowy, ziemniaki, marchew, fasolka szparagowa.\n\n2. Smoothie proteinowe z bananem i masłem orzechowym (500 kcal)\nSkładniki: banan, mleko, masło orzechowe, białko w proszku.</string>
 
     <string name="splash_image_description">Zdjęcie pokazujące napis FIT</string>
+
+    <string name="shopping_list_title">Lista zakupów</string>
+    <string name="bmi_chart_title">Historia BMI</string>
+    <string name="add_to_shopping_list">Dodaj do listy zakupów</string>
+    <string name="item_purchased">Zakupiono</string>
+    <string name="item_not_purchased">Do kupienia</string>
 </resources>

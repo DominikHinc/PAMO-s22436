@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".ui.bmi.BMIFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="start"
         android:padding="16dp">
 
         <TextView
@@ -18,49 +18,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/weight"
-            android:textSize="18sp"
-            android:textAlignment="textStart"/>
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/inputWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:autofillHints="weight"
             android:hint="@string/weight"
-            android:inputType="numberDecimal"
-            android:gravity="start"/>
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/textHeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/height"
-            android:textSize="18sp"
-            android:textAlignment="textStart"/>
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/inputHeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:autofillHints="height"
             android:hint="@string/height"
-            android:inputType="numberDecimal"
-            android:gravity="start"/>
+            android:inputType="numberDecimal" />
 
         <Button
             android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="@string/submit" />
 
         <TextView
             android:id="@+id/textResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"
-            android:textAlignment="textStart"/>
+            android:layout_marginBottom="16dp"
+            android:textSize="18sp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/bmiChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
